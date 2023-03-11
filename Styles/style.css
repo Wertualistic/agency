@@ -7,6 +7,40 @@
   text-decoration: none;
 }
 
+/* Nav - Started */
+
+.forBackground {
+  width: 100vw;
+  height: 80px;
+  background: rgba(21, 24, 28, 0.7);
+  backdrop-filter: blur(1px);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.mainLinks ul {
+  display: flex;
+  align-items: center;
+}
+
+.mainLinks ul li {
+  list-style: none;
+}
+
+.mainLinks ul li:first-child {
+  margin-left: 16px;
+}
+
+.mainLinks ul li:nth-child(2) {
+  margin-left: 14px;
+}
+
+/* Nav - Finished */
+
 /* Header */
 
 header {
@@ -66,8 +100,7 @@ header .left-side a {
   color: #fff;
 }
 
-header .left-side .div a:hover .left-side .div span{
-    width: 196px;
-    height: 70px;
+header .left-side .div a:hover .left-side .div span {
+  width: 196px;
+  height: 70px;
 }
-
