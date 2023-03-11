@@ -169,7 +169,7 @@ header {
   font-size: 18px;
   line-height: 22px;
   z-index: 999999;
-  padding-top: 212px;
+  margin-top: 212px;
   position: relative;
   top: 145px;
   left: 50px;
@@ -326,4 +326,64 @@ header {
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
+}
+
+/* Our Works */
+
+.our-works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 120px;
+}
+
+.our-works .category {
+  width: 664px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: rgba(17, 19, 23, 0.5);
+  border: 1px solid #4e4e4e;
+  backdrop-filter: blur(2px);
+  border-radius: 90px;
+  margin: 42px 0;
+}
+
+.our-works .category span{
+  width: 166px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+
+.our-works .category span:hover{
+  background: linear-gradient(
+    93.5deg,
+    #1e11ad 12.37%,
+    rgba(105, 17, 173, 0.95) 85.28%
+  );
+  border-radius: 30px;
+  width: 166px;
+  height: 51px;
+  transition: all .5s ease-in-out;
+}
+
+.our-works .category span.active {
+  transition: all .5s ease-in-out;
+  width: 166px;
+  height: 51px;
+  background: linear-gradient(
+    93.5deg,
+    #1e11ad 12.37%,
+    rgba(105, 17, 173, 0.95) 85.28%
+  );
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
