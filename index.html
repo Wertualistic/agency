@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="https://fonts.google.com/?query=proxima+nova">
+    <title>Agency Website design</title>
+  </head>
+  <body>
+
+    <!-- Header -->
+
+    <header>
+      <div class="left-side">
+        <h1>Biz veb-saytlar, ilovalarni <br> ishlab chiqamiz</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do <br>
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim <br> ad
+          minim veniam.
+        </p>
+            <div class="div">
+                <span></span>
+                <a href="/portfolio">
+                    Портфолио
+                </a>
+            </div>
+      </div>
+      <div class="right-side">
+        <canvas
+        id="cobe"
+        style="width: 500px; height: 500px;"
+        width="1000"
+        height="1000"
+      ></canvas>
+  
+      <script type="module">
+        import createGlobe from "https://cdn.skypack.dev/cobe";
+  
+        let phi = 0;
+        let canvas = document.getElementById("cobe");
+  
+        const globe = createGlobe(canvas, {
+          devicePixelRatio: 2,
+          width: 1000,
+          height: 1000,
+          phi: 0,
+          theta: 0,
+          dark: 0,
+          diffuse: 1.2,
+          scale: 1,
+          mapSamples: 16000,
+          mapBrightness: 6,
+          baseColor: [1, 1, 1],
+          markerColor: [1, 0.5, 1],
+          glowColor: [1, 1, 1],
+          offset: [0, 0],
+          markers: [
+            { location: [37.7595, -122.4367], size: 0.03 },
+            { location: [40.7128, -74.006], size: 0.1 }
+          ],
+          onRender: (state) => {
+            // Called on every animation frame.
+            // `state` will be an empty object, return updated params.
+            state.phi = phi;
+            phi += 0.01;
+          }
+        });
+      </script>
+      </div>
+    </header>
+
+    <script src="./JS/script.js"></script>
+  </body>
+</html>

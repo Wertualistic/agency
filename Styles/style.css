@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Proxima+Nova");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../assets/bg\ 1.svg);
+  height: 820px;
+  color: white;
+}
+
+header .left-side {
+  width: 695px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+header .left-side h1 {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+header .left-side p {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+header .left-side span {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  top: 190px;
+  z-index: 9;
+  background: #6911ad;
+}
+
+header .left-side a {
+  font-family: "Proxima Nova";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  z-index: 999999;
+  padding-top: 212px;
+  position: relative;
+  top: 155px;
+  left: 40px;
+  color: #fff;
+}
+
+header .left-side .div a:hover .left-side .div span{
+    width: 196px;
+    height: 70px;
+}
+
